@@ -38,18 +38,18 @@ header{
 
     align-items:center;
 
-    padding:30px 60px;
+    padding:30px 40px;
 
     background:white;
 
-    border-bottom:1px solid #efefef;
+    border-bottom:1px solid #ececec;
 
     z-index:1000;
 }
 
 
 
-/* nombre proyecto */
+/* logo */
 
 .logo{
 
@@ -88,7 +88,7 @@ nav a{
 
 
 
-/* efecto hover */
+/* hover */
 
 nav a:hover{
 
@@ -97,47 +97,26 @@ nav a:hover{
 
 
 
-/* sección imagen principal */
-
-.hero-imagen-grande{
-
-    padding-top:130px;
-
-    padding-left:60px;
-
-    padding-right:60px;
-
-    padding-bottom:70px;
-}
-
-
-
-/* contenedor centrado */
-
-.hero-contenedor{
-
-    max-width:800px;
-
-    margin:auto;
-}
-
-
-
 /* imagen principal */
 
-.hero-contenedor img{
+.hero-imagen{
+
+    padding-top:95px;
+}
+
+
+
+/* imagen portada */
+
+.hero-imagen img{
 
     width:100%;
 
-    height:auto;
+    height:calc(100vh - 95px);
+
+    object-fit:cover;
 
     display:block;
-
-    border-radius:18px;
-
-    border:1px solid #ececec;
-
-    box-shadow:0 4px 18px rgba(0,0,0,0.04);
 }
 
 
@@ -148,11 +127,30 @@ nav a:hover{
 
     display:grid;
 
-    grid-template-columns:1fr 1fr 1.2fr;
+    grid-template-columns:0.8fr 1fr 1.2fr;
 
     gap:60px;
 
-    padding:0 60px 100px 60px;
+    padding:60px 40px 100px 40px;
+
+    align-items:start;
+}
+
+
+
+/* miniatura izquierda */
+
+.hero-miniatura img{
+
+    width:33%;
+
+    min-width:140px;
+
+    display:block;
+
+    border-radius:12px;
+
+    border:1px solid #ececec;
 }
 
 
@@ -166,15 +164,17 @@ nav a:hover{
     text-transform:uppercase;
 
     letter-spacing:2px;
+
+    margin-bottom:20px;
 }
 
 
 
-/* título principal */
+/* título */
 
 .hero-titulo h1{
 
-    font-size:64px;
+    font-size:58px;
 
     font-weight:normal;
 
@@ -191,37 +191,7 @@ nav a:hover{
 
     line-height:1.8;
 
-    max-width:500px;
-}
-
-
-
-/* segunda imagen */
-
-.imagen-secundaria{
-
-    padding:0 60px 120px 60px;
-}
-
-
-
-/* imagen secundaria */
-
-.imagen-secundaria img{
-
-    width:100%;
-
-    max-width:900px;
-
-    display:block;
-
-    margin:auto;
-
-    border-radius:18px;
-
-    border:1px solid #ececec;
-
-    box-shadow:0 4px 18px rgba(0,0,0,0.04);
+    max-width:480px;
 }
 
 
@@ -230,7 +200,7 @@ nav a:hover{
 
 footer{
 
-    padding:60px;
+    padding:60px 40px;
 
     display:flex;
 
@@ -260,14 +230,18 @@ footer{
         grid-template-columns:1fr;
 
         gap:40px;
+    }
 
-        padding:0 40px 80px 40px;
+
+    .hero-miniatura img{
+
+        width:180px;
     }
 
 
     .hero-titulo h1{
 
-        font-size:46px;
+        font-size:42px;
     }
 
 
