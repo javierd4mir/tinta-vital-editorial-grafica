@@ -88,7 +88,7 @@ nav a{
 
 
 
-/* hover */
+/* hover navegación */
 
 nav a:hover{
 
@@ -123,69 +123,41 @@ nav a:hover{
 
 
 
-/* nombre autor */
+/* nombre debajo imagen */
 
-.autor{
+.nombre-proyecto{
 
-    text-align:center;
+    padding:32px 0 55px 0;
 
-    padding-top:28px;
+    text-align:left;
 
-    padding-bottom:18px;
+    margin-left:80px;
 }
 
 
 
-/* texto autor */
+/* texto nombre */
 
-.autor p{
+.nombre-proyecto h2{
 
-    font-size:18px;
+    font-size:22px;
 
-    letter-spacing:1px;
+    font-weight:normal;
+
+    letter-spacing:0.5px;
+
+    transition:0.35s ease;
 }
 
 
 
-/* línea editorial */
+/* efecto elegante */
 
-.editorial-linea{
+.nombre-proyecto h2:hover{
 
-    display:flex;
+    opacity:0.55;
 
-    align-items:center;
-
-    justify-content:center;
-
-    gap:28px;
-
-    padding-bottom:70px;
-}
-
-
-
-/* líneas */
-
-.linea{
-
-    width:28%;
-
-    height:1px;
-
-    background:#e5e5e5;
-}
-
-
-
-/* texto editorial */
-
-.editorial-linea p{
-
-    font-size:13px;
-
-    letter-spacing:4px;
-
-    color:#444;
+    transform:translateX(4px);
 }
 
 
@@ -319,18 +291,6 @@ footer{
         flex-direction:column;
 
         gap:20px;
-    }
-
-
-    .editorial-linea{
-
-        gap:14px;
-    }
-
-
-    .linea{
-
-        width:18%;
     }
 
 
