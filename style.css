@@ -16,7 +16,7 @@ body{
 }
 
 
-/* menú */
+/* menú superior */
 
 header{
     position:fixed;
@@ -38,11 +38,12 @@ header{
 }
 
 
-/* logo */
+/* nombre del proyecto */
 
 .logo{
     font-size:18px;
     font-weight:bold;
+
     letter-spacing:1px;
 }
 
@@ -54,6 +55,9 @@ nav{
     gap:30px;
 }
 
+
+/* enlaces */
+
 nav a{
     text-decoration:none;
     color:black;
@@ -64,7 +68,7 @@ nav a{
 }
 
 
-/* efecto simple */
+/* efecto hover simple */
 
 nav a:hover{
     opacity:0.5;
@@ -86,7 +90,7 @@ nav a:hover{
 }
 
 
-/* bloque texto */
+/* bloque de texto */
 
 .hero-texto{
     width:40%;
@@ -97,9 +101,11 @@ nav a:hover{
 
 .subtitulo{
     font-size:14px;
+
     margin-bottom:20px;
 
     text-transform:uppercase;
+
     letter-spacing:2px;
 }
 
@@ -108,6 +114,7 @@ nav a:hover{
 
 .hero-texto h1{
     font-size:72px;
+
     font-weight:normal;
 
     line-height:1.1;
@@ -120,26 +127,34 @@ nav a:hover{
 
 .descripcion{
     font-size:18px;
+
     line-height:1.7;
 }
 
 
-/* imagen portada */
+/* contenedor imagen portada */
 
 .hero-imagen{
-    width:50%;
+    width:42%;
+
+    max-width:650px;
 }
 
 
-/* imagen */
+/* imagen principal */
 
 .hero-imagen img{
     width:100%;
+
+    height:85vh;
+
+    object-fit:cover;
+
     display:block;
 }
 
 
-/* segunda sección */
+/* segunda sección imagen */
 
 .intro-imagen{
     padding:0 60px 120px 60px;
@@ -150,6 +165,7 @@ nav a:hover{
 
 .intro-imagen img{
     width:100%;
+
     display:block;
 }
 
@@ -190,11 +206,13 @@ footer{
 
     header{
         flex-direction:column;
+
         gap:20px;
     }
 
     footer{
         flex-direction:column;
+
         gap:10px;
     }
 
