@@ -112,11 +112,11 @@ nav a:hover{
 
     width:100%;
 
-    height:calc(100vh - 120px);
+    height:82vh;
 
     object-fit:cover;
 
-    object-position:center bottom;
+    object-position:center center;
 
     display:block;
 }
