@@ -1,793 +1,89 @@
-/* reinicio básico */
+<!-- galería -->
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<section id="galeria" class="galeria">
 
 
+    <!-- encabezado -->
 
-/* estilos generales */
+    <div class="galeria-header">
 
-body{
+        <p class="galeria-subtitulo">
+            GALERÍA
+        </p>
 
-    font-family: Helvetica, Arial, sans-serif;
+        <h2>
+            Exploración visual
+            <br>
+            y composición gráfica
+        </h2>
 
-    background:white;
+    </div>
 
-    color:black;
-}
 
 
+    <!-- grid editorial -->
 
-/* menú superior */
+    <div class="galeria-grid">
 
-header{
 
-    position:fixed;
+        <!-- imagen 1 -->
 
-    top:0;
-    left:0;
+        <div class="galeria-item grande">
 
-    width:100%;
+            <img src="img/elementos-creativos.webp" alt="Elementos creativos">
 
-    display:flex;
+        </div>
 
-    justify-content:space-between;
 
-    align-items:center;
 
-    padding:30px 40px;
+        <!-- imagen 2 -->
 
-    background:white;
+        <div class="galeria-item vertical">
 
-    border-bottom:1px solid #ececec;
+            <img src="img/mural-urbano.webp" alt="Mural urbano">
 
-    z-index:1000;
-}
+        </div>
 
 
 
-/* logo */
+        <!-- imagen 3 -->
 
-.logo{
+        <div class="galeria-item">
 
-    font-size:18px;
+            <img src="img/patrones-geometricos.webp" alt="Patrones geométricos">
 
-    font-weight:bold;
+        </div>
 
-    letter-spacing:1px;
-}
 
 
+        <!-- imagen 4 -->
 
-/* navegación */
+        <div class="galeria-item horizontal">
 
-nav{
+            <img src="img/mano-dibujando.webp" alt="Mano dibujando">
 
-    display:flex;
+        </div>
 
-    gap:35px;
-}
 
 
+        <!-- imagen 5 -->
 
-/* enlaces */
+        <div class="galeria-item">
 
-nav a{
+            <img src="img/sofa-trabajo.webp" alt="Espacio creativo">
 
-    text-decoration:none;
+        </div>
 
-    color:black;
 
-    font-size:14px;
 
-    transition:0.3s ease;
-}
+        <!-- imagen 6 -->
 
+        <div class="galeria-item grande">
 
+            <img src="img/escritorio-minimalista.webp" alt="Escritorio minimalista">
 
-/* hover navegación */
+        </div>
 
-nav a:hover{
+    </div>
 
-    opacity:0.5;
-}
-
-
-
-/* portada */
-
-.hero-imagen{
-
-    padding-top:95px;
-}
-
-
-
-/* imagen principal */
-
-.hero-imagen img{
-
-    width:100%;
-
-    height:82vh;
-
-    object-fit:cover;
-
-    object-position:center center;
-
-    display:block;
-}
-
-
-
-/* nombre */
-
-.nombre-proyecto{
-
-    padding:32px 0 55px 0;
-
-    margin-left:80px;
-}
-
-
-
-/* texto nombre */
-
-.nombre-proyecto h2{
-
-    font-size:22px;
-
-    font-weight:normal;
-
-    letter-spacing:0.5px;
-
-    transition:0.35s ease;
-}
-
-
-
-/* efecto hover */
-
-.nombre-proyecto h2:hover{
-
-    opacity:0.55;
-
-    transform:translateX(4px);
-}
-
-
-
-/* layout editorial */
-
-.hero-info{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr 1fr;
-
-    gap:70px;
-
-    padding:0 70px 140px 70px;
-
-    align-items:center;
-}
-
-
-
-/* columna título */
-
-.hero-titulo{
-
-    min-height:320px;
-
-    display:flex;
-
-    align-items:center;
-
-    border-right:1px solid #ececec;
-}
-
-
-
-/* subtítulo */
-
-.subtitulo{
-
-    font-size:13px;
-
-    letter-spacing:3px;
-
-    margin-bottom:22px;
-
-    color:#555;
-}
-
-
-
-/* título */
-
-.hero-titulo h1{
-
-    font-size:72px;
-
-    font-weight:normal;
-
-    line-height:1.05;
-}
-
-
-
-/* descripción */
-
-.hero-descripcion{
-
-    min-height:320px;
-
-    display:flex;
-
-    align-items:center;
-
-    border-right:1px solid #ececec;
-
-    padding-right:40px;
-}
-
-
-
-/* texto descripción */
-
-.hero-descripcion p{
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    max-width:420px;
-}
-
-
-
-/* imagen derecha */
-
-.hero-miniatura{
-
-    min-height:320px;
-
-    display:flex;
-
-    justify-content:flex-end;
-
-    align-items:center;
-}
-
-
-
-/* miniatura */
-
-.hero-miniatura img{
-
-    width:33%;
-
-    min-width:220px;
-
-    margin-left:auto;
-
-    display:block;
-}
-
-
-
-/* sección proyecto */
-
-.proyecto{
-
-    padding:0 70px 140px 70px;
-}
-
-
-
-/* encabezado */
-
-.proyecto-header{
-
-    margin-bottom:70px;
-}
-
-
-
-/* subtítulo */
-
-.proyecto-subtitulo{
-
-    font-size:13px;
-
-    letter-spacing:3px;
-
-    color:#666;
-
-    margin-bottom:24px;
-}
-
-
-
-/* título */
-
-.proyecto-header h2{
-
-    font-size:72px;
-
-    font-weight:normal;
-
-    line-height:1.05;
-}
-
-
-
-/* grid */
-
-.proyecto-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3, 1fr);
-
-    gap:40px;
-}
-
-
-
-/* tarjetas */
-
-.proyecto-card{
-
-    cursor:pointer;
-}
-
-
-
-/* imágenes */
-
-.proyecto-card img{
-
-    width:100%;
-
-    height:620px;
-
-    object-fit:cover;
-
-    display:block;
-
-    transition:0.4s ease;
-}
-
-
-
-/* hover imagen */
-
-.proyecto-card:hover img{
-
-    opacity:0.88;
-
-    transform:scale(1.01);
-}
-
-
-
-/* info */
-
-.proyecto-info{
-
-    padding-top:22px;
-}
-
-
-
-/* categoría */
-
-.categoria{
-
-    font-size:12px;
-
-    letter-spacing:2px;
-
-    color:#666;
-
-    margin-bottom:14px;
-}
-
-
-
-/* títulos */
-
-.proyecto-info h3{
-
-    font-size:28px;
-
-    font-weight:normal;
-
-    line-height:1.3;
-}
-
-
-
-/* sección proceso */
-
-.proceso{
-
-    padding:0 70px 140px 70px;
-}
-
-
-
-/* encabezado proceso */
-
-.proceso-header{
-
-    margin-bottom:70px;
-}
-
-
-
-/* subtítulo proceso */
-
-.proceso-subtitulo{
-
-    font-size:13px;
-
-    letter-spacing:3px;
-
-    color:#666;
-
-    margin-bottom:24px;
-}
-
-
-
-/* título proceso */
-
-.proceso-header h2{
-
-    font-size:72px;
-
-    font-weight:normal;
-
-    line-height:1.05;
-}
-
-
-
-/* layout proceso */
-
-.proceso-layout{
-
-    display:grid;
-
-    grid-template-columns:repeat(3, 1fr);
-
-    gap:40px;
-}
-
-
-
-/* bloques */
-
-.proceso-box{
-
-    border:1px solid #ececec;
-
-    padding:26px;
-
-    transition:0.3s ease;
-}
-
-
-
-/* hover */
-
-.proceso-box:hover{
-
-    transform:translateY(-4px);
-}
-
-
-
-/* contenedor imagen */
-
-.proceso-box-img{
-
-    border:1px solid #ececec;
-
-    padding:18px;
-
-    margin-bottom:24px;
-}
-
-
-
-/* imágenes */
-
-.proceso-box-img img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-    display:block;
-}
-
-
-
-/* info proceso */
-
-.proceso-box-info h3{
-
-    font-size:28px;
-
-    font-weight:normal;
-
-    line-height:1.3;
-}
-
-
-
-/* sección contacto */
-
-.contacto{
-
-    position:relative;
-
-    width:100%;
-
-    height:82vh;
-
-    overflow:hidden;
-
-    margin-bottom:140px;
-}
-
-
-
-/* imagen contacto */
-
-.contacto img{
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    object-position:center center;
-
-    display:block;
-
-    transform:rotate(90deg);
-
-    margin-left:0;
-}
-
-
-
-/* contenido sobre imagen */
-
-.contacto-overlay{
-
-    position:absolute;
-
-    top:50%;
-
-    left:70px;
-
-    transform:translateY(-50%);
-
-    max-width:520px;
-
-    color:white;
-}
-
-
-
-/* subtítulo contacto */
-
-.contacto-subtitulo{
-
-    font-size:13px;
-
-    letter-spacing:3px;
-
-    margin-bottom:24px;
-
-    opacity:0.8;
-}
-
-
-
-/* título contacto */
-
-.contacto-overlay h2{
-
-    font-size:78px;
-
-    font-weight:normal;
-
-    line-height:1;
-
-    margin-bottom:35px;
-}
-
-
-
-/* texto contacto */
-
-.contacto-texto{
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    margin-bottom:45px;
-}
-
-
-
-/* links */
-
-.contacto-links{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-}
-
-
-
-/* textos links */
-
-.contacto-links p{
-
-    font-size:16px;
-
-    transition:0.3s ease;
-}
-
-
-
-/* hover links */
-
-.contacto-links p:hover{
-
-    opacity:0.7;
-
-    transform:translateX(4px);
-}
-
-
-
-/* footer */
-
-footer{
-
-    padding:50px 40px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    border-top:1px solid #ececec;
-
-    font-size:14px;
-}
-
-
-
-/* responsive */
-
-@media(max-width:900px){
-
-    header{
-
-        flex-direction:column;
-
-        gap:20px;
-    }
-
-
-    .hero-info{
-
-        grid-template-columns:1fr;
-
-        gap:40px;
-
-        padding:0 40px 80px 40px;
-    }
-
-
-    .hero-titulo,
-    .hero-descripcion{
-
-        border-right:none;
-
-        min-height:auto;
-    }
-
-
-    .hero-titulo h1{
-
-        font-size:48px;
-    }
-
-
-    .hero-miniatura{
-
-        justify-content:flex-start;
-    }
-
-
-    .proyecto,
-    .proceso{
-
-        padding:0 40px 100px 40px;
-    }
-
-
-    .proyecto-header h2,
-    .proceso-header h2{
-
-        font-size:48px;
-    }
-
-
-    .proyecto-grid,
-    .proceso-layout{
-
-        grid-template-columns:1fr;
-
-        gap:60px;
-    }
-
-
-    .proyecto-card img{
-
-        height:auto;
-    }
-
-
-    .contacto{
-
-        height:70vh;
-
-        margin-bottom:90px;
-    }
-
-
-    .contacto-overlay{
-
-        left:40px;
-
-        right:40px;
-
-        max-width:none;
-    }
-
-
-    .contacto-overlay h2{
-
-        font-size:52px;
-    }
-
-
-    footer{
-
-        flex-direction:column;
-
-        gap:12px;
-    }
-
-}
+</section>
