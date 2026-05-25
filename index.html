@@ -1,793 +1,452 @@
-/* reinicio básico */
+<!DOCTYPE html>
+<html lang="es">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<head>
 
+    <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* estilos generales */
+    <title>Tinta Vital</title>
 
-body{
+    <link rel="stylesheet" href="style.css">
 
-    font-family: Helvetica, Arial, sans-serif;
+</head>
 
-    background:white;
+<body>
 
-    color:black;
-}
 
+    <!-- menú superior -->
 
+    <header>
 
-/* menú superior */
+        <div class="logo">
+            TINTA VITAL
+        </div>
 
-header{
 
-    position:fixed;
+        <nav>
 
-    top:0;
-    left:0;
+            <a href="#inicio">Inicio</a>
 
-    width:100%;
+            <a href="#galeria">Galería</a>
 
-    display:flex;
+            <a href="#proyecto">Proyecto</a>
 
-    justify-content:space-between;
+            <a href="#proceso">Proceso</a>
 
-    align-items:center;
+            <a href="#contacto">Contacto</a>
 
-    padding:30px 40px;
+        </nav>
 
-    background:white;
+    </header>
 
-    border-bottom:1px solid #ececec;
 
-    z-index:1000;
-}
 
+    <!-- portada -->
 
+    <section id="inicio" class="hero-imagen">
 
-/* logo */
+        <img src="img/cuaderno-bocetos.webp" alt="Cuaderno de bocetos">
 
-.logo{
+    </section>
 
-    font-size:18px;
 
-    font-weight:bold;
 
-    letter-spacing:1px;
-}
+    <!-- nombre -->
 
+    <section class="nombre-proyecto">
 
+        <h2>
+            J4vier D4mir
+        </h2>
 
-/* navegación */
+    </section>
 
-nav{
 
-    display:flex;
 
-    gap:35px;
-}
+    <!-- layout editorial -->
 
+    <section class="hero-info">
 
 
-/* enlaces */
+        <div class="hero-titulo">
 
-nav a{
+            <div>
 
-    text-decoration:none;
+                <p class="subtitulo">
+                    EDITORIAL GRÁFICA DIGITAL
+                </p>
 
-    color:black;
+                <h1>
+                    Ilustración
+                    <br>
+                    Vehemente
+                </h1>
 
-    font-size:14px;
+            </div>
 
-    transition:0.3s ease;
-}
+        </div>
 
 
 
-/* hover navegación */
+        <div class="hero-descripcion">
 
-nav a:hover{
+            <p>
+                Plataforma enfocada en ilustración política,
+                comunicación visual crítica y composición
+                editorial para medios digitales.
+            </p>
 
-    opacity:0.5;
-}
+        </div>
 
 
 
-/* portada */
+        <div class="hero-miniatura">
 
-.hero-imagen{
+            <img src="img/cuaderno.webp" alt="Cuaderno creativo">
 
-    padding-top:95px;
-}
+        </div>
 
+    </section>
 
 
-/* imagen principal */
 
-.hero-imagen img{
+    <!-- galería -->
 
-    width:100%;
+    <section id="galeria" class="galeria">
 
-    height:82vh;
 
-    object-fit:cover;
+        <div class="galeria-header">
 
-    object-position:center center;
+            <p class="galeria-subtitulo">
+                GALERÍA
+            </p>
 
-    display:block;
-}
+            <h2>
+                Exploración visual
+                <br>
+                y composición gráfica
+            </h2>
 
+        </div>
 
 
-/* nombre */
 
-.nombre-proyecto{
+        <div class="galeria-grid">
 
-    padding:32px 0 55px 0;
 
-    margin-left:80px;
-}
+            <div class="galeria-item grande">
 
+                <img src="img/elementos-creativos.webp" alt="Elementos creativos">
 
+            </div>
 
-/* texto nombre */
 
-.nombre-proyecto h2{
 
-    font-size:22px;
+            <div class="galeria-item vertical">
 
-    font-weight:normal;
+                <img src="img/mural-urbano.webp" alt="Mural urbano">
 
-    letter-spacing:0.5px;
+            </div>
 
-    transition:0.35s ease;
-}
 
 
+            <div class="galeria-item">
 
-/* efecto hover */
+                <img src="img/patrones-geometricos.webp" alt="Patrones geométricos">
 
-.nombre-proyecto h2:hover{
+            </div>
 
-    opacity:0.55;
 
-    transform:translateX(4px);
-}
 
+            <div class="galeria-item horizontal">
 
+                <img src="img/mano-dibujando.webp" alt="Mano dibujando">
 
-/* layout editorial */
+            </div>
 
-.hero-info{
 
-    display:grid;
 
-    grid-template-columns:1fr 1fr 1fr;
+            <div class="galeria-item">
 
-    gap:70px;
+                <img src="img/sofa-trabajo.webp" alt="Espacio creativo">
 
-    padding:0 70px 140px 70px;
+            </div>
 
-    align-items:center;
-}
 
 
+            <div class="galeria-item grande">
 
-/* columna título */
+                <img src="img/escritorio-minimalista.webp" alt="Escritorio minimalista">
 
-.hero-titulo{
+            </div>
 
-    min-height:320px;
+        </div>
 
-    display:flex;
+    </section>
 
-    align-items:center;
 
-    border-right:1px solid #ececec;
-}
 
+    <!-- proyecto -->
 
+    <section id="proyecto" class="proyecto">
 
-/* subtítulo */
 
-.subtitulo{
+        <div class="proyecto-header">
 
-    font-size:13px;
+            <p class="proyecto-subtitulo">
+                BLOG / PROYECTO
+            </p>
 
-    letter-spacing:3px;
+            <h2>
+                Procesos visuales
+                <br>
+                y composición editorial
+            </h2>
 
-    margin-bottom:22px;
+        </div>
 
-    color:#555;
-}
 
 
+        <div class="proyecto-grid">
 
-/* título */
 
-.hero-titulo h1{
+            <article class="proyecto-card">
 
-    font-size:72px;
+                <img src="img/fichas-blog.webp" alt="Fichas editoriales">
 
-    font-weight:normal;
+                <div class="proyecto-info">
 
-    line-height:1.05;
-}
+                    <p class="categoria">
+                        Editorial
+                    </p>
 
+                    <h3>
+                        Exploración gráfica
+                        para narrativa visual
+                    </h3>
 
+                </div>
 
-/* descripción */
+            </article>
 
-.hero-descripcion{
 
-    min-height:320px;
 
-    display:flex;
+            <article class="proyecto-card">
 
-    align-items:center;
+                <img src="img/escritorio-minimalista.webp" alt="Espacio creativo">
 
-    border-right:1px solid #ececec;
+                <div class="proyecto-info">
 
-    padding-right:40px;
-}
+                    <p class="categoria">
+                        Proceso creativo
+                    </p>
 
+                    <h3>
+                        Organización visual
+                        para medios digitales
+                    </h3>
 
+                </div>
 
-/* texto descripción */
+            </article>
 
-.hero-descripcion p{
 
-    font-size:18px;
 
-    line-height:1.9;
+            <article class="proyecto-card">
 
-    max-width:420px;
-}
+                <img src="img/patrones-geometricos.webp" alt="Patrones gráficos">
 
+                <div class="proyecto-info">
 
+                    <p class="categoria">
+                        Diseño experimental
+                    </p>
 
-/* imagen derecha */
+                    <h3>
+                        Composición modular
+                        e identidad gráfica
+                    </h3>
 
-.hero-miniatura{
+                </div>
 
-    min-height:320px;
+            </article>
 
-    display:flex;
+        </div>
 
-    justify-content:flex-end;
+    </section>
 
-    align-items:center;
-}
 
 
+    <!-- proceso -->
 
-/* miniatura */
+    <section id="proceso" class="proceso">
 
-.hero-miniatura img{
 
-    width:33%;
+        <div class="proceso-header">
 
-    min-width:220px;
+            <p class="proceso-subtitulo">
+                PROCESO
+            </p>
 
-    margin-left:auto;
+            <h2>
+                Narrativa visual
+                <br>
+                y experimentación
+            </h2>
 
-    display:block;
-}
+        </div>
 
 
 
-/* sección proyecto */
+        <div class="proceso-layout">
 
-.proyecto{
 
-    padding:0 70px 140px 70px;
-}
+            <article class="proceso-box">
 
+                <div class="proceso-box-img">
 
+                    <img src="img/mano-dibujando.webp" alt="Ilustración digital">
 
-/* encabezado */
+                </div>
 
-.proyecto-header{
+                <div class="proceso-box-info">
 
-    margin-bottom:70px;
-}
+                    <p class="categoria">
+                        Ilustración digital
+                    </p>
 
+                    <h3>
+                        Desarrollo de bocetos
+                        para composición editorial
+                    </h3>
 
+                </div>
 
-/* subtítulo */
+            </article>
 
-.proyecto-subtitulo{
 
-    font-size:13px;
 
-    letter-spacing:3px;
+            <article class="proceso-box">
 
-    color:#666;
+                <div class="proceso-box-img">
 
-    margin-bottom:24px;
-}
+                    <img src="img/sofa-trabajo.webp" alt="Espacio creativo">
 
+                </div>
 
+                <div class="proceso-box-info">
 
-/* título */
+                    <p class="categoria">
+                        Dirección visual
+                    </p>
 
-.proyecto-header h2{
+                    <h3>
+                        Construcción de ambientes
+                        para conceptualización gráfica
+                    </h3>
 
-    font-size:72px;
+                </div>
 
-    font-weight:normal;
+            </article>
 
-    line-height:1.05;
-}
 
 
+            <article class="proceso-box">
 
-/* grid */
+                <div class="proceso-box-img">
 
-.proyecto-grid{
+                    <img src="img/mural-urbano.webp" alt="Mural urbano">
 
-    display:grid;
+                </div>
 
-    grid-template-columns:repeat(3, 1fr);
+                <div class="proceso-box-info">
 
-    gap:40px;
-}
+                    <p class="categoria">
+                        Cultura visual
+                    </p>
 
+                    <h3>
+                        Referencias urbanas
+                        y narrativa contemporánea
+                    </h3>
 
+                </div>
 
-/* tarjetas */
+            </article>
 
-.proyecto-card{
+        </div>
 
-    cursor:pointer;
-}
+    </section>
 
 
 
-/* imágenes */
+    <!-- contacto -->
 
-.proyecto-card img{
+    <section id="contacto" class="contacto">
 
-    width:100%;
+        <img src="img/help.webp" alt="Contacto editorial">
 
-    height:620px;
 
-    object-fit:cover;
+        <div class="contacto-overlay">
 
-    display:block;
+            <p class="contacto-subtitulo">
+                CONTACTO
+            </p>
 
-    transition:0.4s ease;
-}
+            <h2>
+                Hablemos.
+            </h2>
 
+            <p class="contacto-texto">
+                Disponible para proyectos editoriales,
+                ilustración política y colaboración visual
+                para medios digitales.
+            </p>
 
 
-/* hover imagen */
+            <div class="contacto-links">
 
-.proyecto-card:hover img{
+                <p>
+                    contacto@tintavital.com
+                </p>
 
-    opacity:0.88;
+                <p>
+                    instagram / @tintavital
+                </p>
 
-    transform:scale(1.01);
-}
+                <p>
+                    Guadalajara, México
+                </p>
 
+            </div>
 
+        </div>
 
-/* info */
+    </section>
 
-.proyecto-info{
 
-    padding-top:22px;
-}
 
+    <!-- footer -->
 
+    <footer>
 
-/* categoría */
+        <p>
+            Tinta Vital [Editorial Gráfica]
+        </p>
 
-.categoria{
+        <p>
+            Javier Damir López Torres
+        </p>
 
-    font-size:12px;
+        <p>
+            Optimización de medios digitales para la Web
+        </p>
 
-    letter-spacing:2px;
+    </footer>
 
-    color:#666;
 
-    margin-bottom:14px;
-}
+</body>
 
-
-
-/* títulos */
-
-.proyecto-info h3{
-
-    font-size:28px;
-
-    font-weight:normal;
-
-    line-height:1.3;
-}
-
-
-
-/* sección proceso */
-
-.proceso{
-
-    padding:0 70px 140px 70px;
-}
-
-
-
-/* encabezado proceso */
-
-.proceso-header{
-
-    margin-bottom:70px;
-}
-
-
-
-/* subtítulo proceso */
-
-.proceso-subtitulo{
-
-    font-size:13px;
-
-    letter-spacing:3px;
-
-    color:#666;
-
-    margin-bottom:24px;
-}
-
-
-
-/* título proceso */
-
-.proceso-header h2{
-
-    font-size:72px;
-
-    font-weight:normal;
-
-    line-height:1.05;
-}
-
-
-
-/* layout proceso */
-
-.proceso-layout{
-
-    display:grid;
-
-    grid-template-columns:repeat(3, 1fr);
-
-    gap:40px;
-}
-
-
-
-/* bloques */
-
-.proceso-box{
-
-    border:1px solid #ececec;
-
-    padding:26px;
-
-    transition:0.3s ease;
-}
-
-
-
-/* hover */
-
-.proceso-box:hover{
-
-    transform:translateY(-4px);
-}
-
-
-
-/* contenedor imagen */
-
-.proceso-box-img{
-
-    border:1px solid #ececec;
-
-    padding:18px;
-
-    margin-bottom:24px;
-}
-
-
-
-/* imágenes */
-
-.proceso-box-img img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-    display:block;
-}
-
-
-
-/* info proceso */
-
-.proceso-box-info h3{
-
-    font-size:28px;
-
-    font-weight:normal;
-
-    line-height:1.3;
-}
-
-
-
-/* sección contacto */
-
-.contacto{
-
-    position:relative;
-
-    width:100%;
-
-    height:82vh;
-
-    overflow:hidden;
-
-    margin-bottom:140px;
-}
-
-
-
-/* imagen contacto */
-
-.contacto img{
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    object-position:center center;
-
-    display:block;
-
-    transform:rotate(90deg);
-
-    margin-left:0;
-}
-
-
-
-/* contenido sobre imagen */
-
-.contacto-overlay{
-
-    position:absolute;
-
-    top:50%;
-
-    left:70px;
-
-    transform:translateY(-50%);
-
-    max-width:520px;
-
-    color:white;
-}
-
-
-
-/* subtítulo contacto */
-
-.contacto-subtitulo{
-
-    font-size:13px;
-
-    letter-spacing:3px;
-
-    margin-bottom:24px;
-
-    opacity:0.8;
-}
-
-
-
-/* título contacto */
-
-.contacto-overlay h2{
-
-    font-size:78px;
-
-    font-weight:normal;
-
-    line-height:1;
-
-    margin-bottom:35px;
-}
-
-
-
-/* texto contacto */
-
-.contacto-texto{
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    margin-bottom:45px;
-}
-
-
-
-/* links */
-
-.contacto-links{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-}
-
-
-
-/* textos links */
-
-.contacto-links p{
-
-    font-size:16px;
-
-    transition:0.3s ease;
-}
-
-
-
-/* hover links */
-
-.contacto-links p:hover{
-
-    opacity:0.7;
-
-    transform:translateX(4px);
-}
-
-
-
-/* footer */
-
-footer{
-
-    padding:50px 40px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    border-top:1px solid #ececec;
-
-    font-size:14px;
-}
-
-
-
-/* responsive */
-
-@media(max-width:900px){
-
-    header{
-
-        flex-direction:column;
-
-        gap:20px;
-    }
-
-
-    .hero-info{
-
-        grid-template-columns:1fr;
-
-        gap:40px;
-
-        padding:0 40px 80px 40px;
-    }
-
-
-    .hero-titulo,
-    .hero-descripcion{
-
-        border-right:none;
-
-        min-height:auto;
-    }
-
-
-    .hero-titulo h1{
-
-        font-size:48px;
-    }
-
-
-    .hero-miniatura{
-
-        justify-content:flex-start;
-    }
-
-
-    .proyecto,
-    .proceso{
-
-        padding:0 40px 100px 40px;
-    }
-
-
-    .proyecto-header h2,
-    .proceso-header h2{
-
-        font-size:48px;
-    }
-
-
-    .proyecto-grid,
-    .proceso-layout{
-
-        grid-template-columns:1fr;
-
-        gap:60px;
-    }
-
-
-    .proyecto-card img{
-
-        height:auto;
-    }
-
-
-    .contacto{
-
-        height:70vh;
-
-        margin-bottom:90px;
-    }
-
-
-    .contacto-overlay{
-
-        left:40px;
-
-        right:40px;
-
-        max-width:none;
-    }
-
-
-    .contacto-overlay h2{
-
-        font-size:52px;
-    }
-
-
-    footer{
-
-        flex-direction:column;
-
-        gap:12px;
-    }
-
-}
+</html>
