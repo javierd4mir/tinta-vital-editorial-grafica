@@ -603,9 +603,9 @@ nav a:hover{
 
 
 
-/* layout proceso */
+/* grid proceso */
 
-.proceso-layout{
+.proceso-grid{
 
     display:grid;
 
@@ -616,59 +616,55 @@ nav a:hover{
 
 
 
-/* bloques */
+/* tarjetas proceso */
 
-.proceso-box{
+.proceso-card{
 
-    border:1px solid #ececec;
+    cursor:pointer;
+}
 
-    padding:26px;
 
-    transition:0.3s ease;
+
+/* imágenes proceso */
+
+.proceso-card img{
+
+    width:100%;
+
+    height:720px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.4s ease;
 }
 
 
 
 /* hover */
 
-.proceso-box:hover{
+.proceso-card:hover img{
 
-    transform:translateY(-4px);
-}
+    opacity:0.88;
 
-
-
-/* contenedor imagen */
-
-.proceso-box-img{
-
-    border:1px solid #ececec;
-
-    padding:18px;
-
-    margin-bottom:24px;
-}
-
-
-
-/* imágenes */
-
-.proceso-box-img img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-    display:block;
+    transform:scale(1.01);
 }
 
 
 
 /* info proceso */
 
-.proceso-box-info h3{
+.proceso-info{
+
+    padding-top:22px;
+}
+
+
+
+/* títulos proceso */
+
+.proceso-info h3{
 
     font-size:28px;
 
@@ -700,15 +696,19 @@ nav a:hover{
 
 .contacto img{
 
-    width:100%;
+    width:115%;
 
-    height:82vh;
+    height:115%;
 
     object-fit:cover;
 
     object-position:center center;
 
     display:block;
+
+    filter:brightness(0.78);
+
+    transform:rotate(-8deg) scale(1.1);
 }
 
 
@@ -888,7 +888,7 @@ footer{
 
     .galeria-grid,
     .proyecto-grid,
-    .proceso-layout{
+    .proceso-grid{
 
         grid-template-columns:1fr;
 
@@ -905,7 +905,8 @@ footer{
 
 
     .galeria-item img,
-    .proyecto-card img{
+    .proyecto-card img,
+    .proceso-card img{
 
         height:auto;
     }
