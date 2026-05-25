@@ -1,383 +1,793 @@
-<!DOCTYPE html>
-<html lang="es">
+/* reinicio básico */
 
-<head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tinta Vital</title>
+/* estilos generales */
 
-    <link rel="stylesheet" href="style.css">
+body{
 
-</head>
+    font-family: Helvetica, Arial, sans-serif;
 
-<body>
+    background:white;
 
+    color:black;
+}
 
-    <!-- menú superior -->
 
-    <header>
 
-        <div class="logo">
-            TINTA VITAL
-        </div>
+/* menú superior */
 
+header{
 
-        <nav>
+    position:fixed;
 
-            <a href="#inicio">Inicio</a>
+    top:0;
+    left:0;
 
-            <a href="#galeria">Galería</a>
+    width:100%;
 
-            <a href="#proyecto">Proyecto</a>
+    display:flex;
 
-            <a href="#proceso">Proceso</a>
+    justify-content:space-between;
 
-            <a href="#contacto">Contacto</a>
+    align-items:center;
 
-        </nav>
+    padding:30px 40px;
 
-    </header>
+    background:white;
 
+    border-bottom:1px solid #ececec;
 
+    z-index:1000;
+}
 
-    <!-- portada -->
 
-    <section id="inicio" class="hero-imagen">
 
-        <img src="img/cuaderno-bocetos.webp" alt="Cuaderno de bocetos">
+/* logo */
 
-    </section>
+.logo{
 
+    font-size:18px;
 
+    font-weight:bold;
 
-    <!-- nombre -->
+    letter-spacing:1px;
+}
 
-    <section class="nombre-proyecto">
 
-        <h2>
-            J4vier D4mir
-        </h2>
 
-    </section>
+/* navegación */
 
+nav{
 
+    display:flex;
 
-    <!-- layout editorial -->
+    gap:35px;
+}
 
-    <section class="hero-info">
 
 
-        <div class="hero-titulo">
+/* enlaces */
 
-            <div>
+nav a{
 
-                <p class="subtitulo">
-                    EDITORIAL GRÁFICA DIGITAL
-                </p>
+    text-decoration:none;
 
-                <h1>
-                    Ilustración
-                    <br>
-                    Vehemente
-                </h1>
+    color:black;
 
-            </div>
+    font-size:14px;
 
-        </div>
+    transition:0.3s ease;
+}
 
 
 
-        <div class="hero-descripcion">
+/* hover navegación */
 
-            <p>
-                Plataforma enfocada en ilustración política,
-                comunicación visual crítica y composición
-                editorial para medios digitales.
-            </p>
+nav a:hover{
 
-        </div>
+    opacity:0.5;
+}
 
 
 
-        <div class="hero-miniatura">
+/* portada */
 
-            <img src="img/cuaderno.webp" alt="Cuaderno creativo">
+.hero-imagen{
 
-        </div>
+    padding-top:95px;
+}
 
-    </section>
 
 
+/* imagen principal */
 
-    <!-- proyecto -->
+.hero-imagen img{
 
-    <section id="proyecto" class="proyecto">
+    width:100%;
 
+    height:82vh;
 
-        <div class="proyecto-header">
+    object-fit:cover;
 
-            <p class="proyecto-subtitulo">
-                BLOG / PROYECTO
-            </p>
+    object-position:center center;
 
-            <h2>
-                Procesos visuales
-                <br>
-                y composición editorial
-            </h2>
+    display:block;
+}
 
-        </div>
 
 
+/* nombre */
 
-        <div class="proyecto-grid">
+.nombre-proyecto{
 
+    padding:32px 0 55px 0;
 
-            <article class="proyecto-card">
+    margin-left:80px;
+}
 
-                <img src="img/fichas-blog.webp" alt="Fichas editoriales">
 
-                <div class="proyecto-info">
 
-                    <p class="categoria">
-                        Editorial
-                    </p>
+/* texto nombre */
 
-                    <h3>
-                        Exploración gráfica
-                        para narrativa visual
-                    </h3>
+.nombre-proyecto h2{
 
-                </div>
+    font-size:22px;
 
-            </article>
+    font-weight:normal;
 
+    letter-spacing:0.5px;
 
+    transition:0.35s ease;
+}
 
-            <article class="proyecto-card">
 
-                <img src="img/escritorio-minimalista.webp" alt="Espacio creativo">
 
-                <div class="proyecto-info">
+/* efecto hover */
 
-                    <p class="categoria">
-                        Proceso creativo
-                    </p>
+.nombre-proyecto h2:hover{
 
-                    <h3>
-                        Organización visual
-                        para medios digitales
-                    </h3>
+    opacity:0.55;
 
-                </div>
+    transform:translateX(4px);
+}
 
-            </article>
 
 
+/* layout editorial */
 
-            <article class="proyecto-card">
+.hero-info{
 
-                <img src="img/patrones-geometricos.webp" alt="Patrones gráficos">
+    display:grid;
 
-                <div class="proyecto-info">
+    grid-template-columns:1fr 1fr 1fr;
 
-                    <p class="categoria">
-                        Diseño experimental
-                    </p>
+    gap:70px;
 
-                    <h3>
-                        Composición modular
-                        e identidad gráfica
-                    </h3>
+    padding:0 70px 140px 70px;
 
-                </div>
+    align-items:center;
+}
 
-            </article>
 
-        </div>
 
-    </section>
+/* columna título */
 
+.hero-titulo{
 
+    min-height:320px;
 
-    <!-- proceso -->
+    display:flex;
 
-    <section id="proceso" class="proceso">
+    align-items:center;
 
+    border-right:1px solid #ececec;
+}
 
-        <div class="proceso-header">
 
-            <p class="proceso-subtitulo">
-                PROCESO
-            </p>
 
-            <h2>
-                Narrativa visual
-                <br>
-                y experimentación
-            </h2>
+/* subtítulo */
 
-        </div>
+.subtitulo{
 
+    font-size:13px;
 
+    letter-spacing:3px;
 
-        <div class="proceso-layout">
+    margin-bottom:22px;
 
+    color:#555;
+}
 
-            <!-- bloque 1 -->
 
-            <article class="proceso-box">
 
-                <div class="proceso-box-img">
+/* título */
 
-                    <img src="img/mano-dibujando.webp" alt="Ilustración digital">
+.hero-titulo h1{
 
-                </div>
+    font-size:72px;
 
-                <div class="proceso-box-info">
+    font-weight:normal;
 
-                    <p class="categoria">
-                        Ilustración digital
-                    </p>
+    line-height:1.05;
+}
 
-                    <h3>
-                        Desarrollo de bocetos
-                        para composición editorial
-                    </h3>
 
-                </div>
 
-            </article>
+/* descripción */
 
+.hero-descripcion{
 
+    min-height:320px;
 
-            <!-- bloque 2 -->
+    display:flex;
 
-            <article class="proceso-box">
+    align-items:center;
 
-                <div class="proceso-box-img">
+    border-right:1px solid #ececec;
 
-                    <img src="img/sofa-trabajo.webp" alt="Espacio creativo">
+    padding-right:40px;
+}
 
-                </div>
 
-                <div class="proceso-box-info">
 
-                    <p class="categoria">
-                        Dirección visual
-                    </p>
+/* texto descripción */
 
-                    <h3>
-                        Construcción de ambientes
-                        para conceptualización gráfica
-                    </h3>
+.hero-descripcion p{
 
-                </div>
+    font-size:18px;
 
-            </article>
+    line-height:1.9;
 
+    max-width:420px;
+}
 
 
-            <!-- bloque 3 -->
 
-            <article class="proceso-box">
+/* imagen derecha */
 
-                <div class="proceso-box-img">
+.hero-miniatura{
 
-                    <img src="img/mural-urbano.webp" alt="Mural urbano">
+    min-height:320px;
 
-                </div>
+    display:flex;
 
-                <div class="proceso-box-info">
+    justify-content:flex-end;
 
-                    <p class="categoria">
-                        Cultura visual
-                    </p>
+    align-items:center;
+}
 
-                    <h3>
-                        Referencias urbanas
-                        y narrativa contemporánea
-                    </h3>
 
-                </div>
 
-            </article>
+/* miniatura */
 
-        </div>
+.hero-miniatura img{
 
-    </section>
+    width:33%;
 
+    min-width:220px;
 
+    margin-left:auto;
 
-    <!-- contacto -->
+    display:block;
+}
 
-    <section id="contacto" class="contacto">
 
 
-        <img src="img/help.webp" alt="Contacto editorial">
+/* sección proyecto */
 
+.proyecto{
 
-        <div class="contacto-overlay">
+    padding:0 70px 140px 70px;
+}
 
-            <p class="contacto-subtitulo">
-                CONTACTO
-            </p>
 
-            <h2>
-                Hablemos.
-            </h2>
 
-            <p class="contacto-texto">
-                Disponible para proyectos editoriales,
-                ilustración política y colaboración visual
-                para medios digitales.
-            </p>
+/* encabezado */
 
+.proyecto-header{
 
-            <div class="contacto-links">
+    margin-bottom:70px;
+}
 
-                <p>
-                    contacto@tintavital.com
-                </p>
 
-                <p>
-                    instagram / @tintavital
-                </p>
 
-                <p>
-                    Guadalajara, México
-                </p>
+/* subtítulo */
 
-            </div>
+.proyecto-subtitulo{
 
-        </div>
+    font-size:13px;
 
-    </section>
+    letter-spacing:3px;
 
+    color:#666;
 
+    margin-bottom:24px;
+}
 
-    <!-- footer -->
 
-    <footer>
 
-        <p>
-            Tinta Vital [Editorial Gráfica]
-        </p>
+/* título */
 
-        <p>
-            Javier Damir López Torres
-        </p>
+.proyecto-header h2{
 
-        <p>
-            Optimización de medios digitales para la Web
-        </p>
+    font-size:72px;
 
-    </footer>
+    font-weight:normal;
 
+    line-height:1.05;
+}
 
-</body>
 
-</html>
+
+/* grid */
+
+.proyecto-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:40px;
+}
+
+
+
+/* tarjetas */
+
+.proyecto-card{
+
+    cursor:pointer;
+}
+
+
+
+/* imágenes */
+
+.proyecto-card img{
+
+    width:100%;
+
+    height:620px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.4s ease;
+}
+
+
+
+/* hover imagen */
+
+.proyecto-card:hover img{
+
+    opacity:0.88;
+
+    transform:scale(1.01);
+}
+
+
+
+/* info */
+
+.proyecto-info{
+
+    padding-top:22px;
+}
+
+
+
+/* categoría */
+
+.categoria{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    color:#666;
+
+    margin-bottom:14px;
+}
+
+
+
+/* títulos */
+
+.proyecto-info h3{
+
+    font-size:28px;
+
+    font-weight:normal;
+
+    line-height:1.3;
+}
+
+
+
+/* sección proceso */
+
+.proceso{
+
+    padding:0 70px 140px 70px;
+}
+
+
+
+/* encabezado proceso */
+
+.proceso-header{
+
+    margin-bottom:70px;
+}
+
+
+
+/* subtítulo proceso */
+
+.proceso-subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    color:#666;
+
+    margin-bottom:24px;
+}
+
+
+
+/* título proceso */
+
+.proceso-header h2{
+
+    font-size:72px;
+
+    font-weight:normal;
+
+    line-height:1.05;
+}
+
+
+
+/* layout proceso */
+
+.proceso-layout{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:40px;
+}
+
+
+
+/* bloques */
+
+.proceso-box{
+
+    border:1px solid #ececec;
+
+    padding:26px;
+
+    transition:0.3s ease;
+}
+
+
+
+/* hover */
+
+.proceso-box:hover{
+
+    transform:translateY(-4px);
+}
+
+
+
+/* contenedor imagen */
+
+.proceso-box-img{
+
+    border:1px solid #ececec;
+
+    padding:18px;
+
+    margin-bottom:24px;
+}
+
+
+
+/* imágenes */
+
+.proceso-box-img img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+
+/* info proceso */
+
+.proceso-box-info h3{
+
+    font-size:28px;
+
+    font-weight:normal;
+
+    line-height:1.3;
+}
+
+
+
+/* sección contacto */
+
+.contacto{
+
+    position:relative;
+
+    width:100%;
+
+    height:82vh;
+
+    overflow:hidden;
+
+    margin-bottom:140px;
+}
+
+
+
+/* imagen contacto */
+
+.contacto img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
+
+    display:block;
+
+    transform:rotate(90deg);
+
+    margin-left:0;
+}
+
+
+
+/* contenido sobre imagen */
+
+.contacto-overlay{
+
+    position:absolute;
+
+    top:50%;
+
+    left:70px;
+
+    transform:translateY(-50%);
+
+    max-width:520px;
+
+    color:white;
+}
+
+
+
+/* subtítulo contacto */
+
+.contacto-subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    margin-bottom:24px;
+
+    opacity:0.8;
+}
+
+
+
+/* título contacto */
+
+.contacto-overlay h2{
+
+    font-size:78px;
+
+    font-weight:normal;
+
+    line-height:1;
+
+    margin-bottom:35px;
+}
+
+
+
+/* texto contacto */
+
+.contacto-texto{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+}
+
+
+
+/* links */
+
+.contacto-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+
+
+/* textos links */
+
+.contacto-links p{
+
+    font-size:16px;
+
+    transition:0.3s ease;
+}
+
+
+
+/* hover links */
+
+.contacto-links p:hover{
+
+    opacity:0.7;
+
+    transform:translateX(4px);
+}
+
+
+
+/* footer */
+
+footer{
+
+    padding:50px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-top:1px solid #ececec;
+
+    font-size:14px;
+}
+
+
+
+/* responsive */
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+
+    .hero-info{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        padding:0 40px 80px 40px;
+    }
+
+
+    .hero-titulo,
+    .hero-descripcion{
+
+        border-right:none;
+
+        min-height:auto;
+    }
+
+
+    .hero-titulo h1{
+
+        font-size:48px;
+    }
+
+
+    .hero-miniatura{
+
+        justify-content:flex-start;
+    }
+
+
+    .proyecto,
+    .proceso{
+
+        padding:0 40px 100px 40px;
+    }
+
+
+    .proyecto-header h2,
+    .proceso-header h2{
+
+        font-size:48px;
+    }
+
+
+    .proyecto-grid,
+    .proceso-layout{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+    }
+
+
+    .proyecto-card img{
+
+        height:auto;
+    }
+
+
+    .contacto{
+
+        height:70vh;
+
+        margin-bottom:90px;
+    }
+
+
+    .contacto-overlay{
+
+        left:40px;
+
+        right:40px;
+
+        max-width:none;
+    }
+
+
+    .contacto-overlay h2{
+
+        font-size:52px;
+    }
+
+
+    footer{
+
+        flex-direction:column;
+
+        gap:12px;
+    }
+
+}
