@@ -8,6 +8,24 @@
 
 
 
+/* scroll suave */
+
+html{
+
+    scroll-behavior:smooth;
+}
+
+
+
+/* compensación menú fijo */
+
+section{
+
+    scroll-margin-top:120px;
+}
+
+
+
 /* estilos generales */
 
 body{
@@ -280,6 +298,145 @@ nav a:hover{
 
 
 
+/* sección galería editorial */
+
+.editorial-section{
+
+    padding:0 70px 140px 70px;
+}
+
+
+
+/* encabezado */
+
+.editorial-header{
+
+    margin-bottom:70px;
+}
+
+
+
+/* subtítulo */
+
+.editorial-subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    color:#666;
+
+    margin-bottom:24px;
+}
+
+
+
+/* título */
+
+.editorial-header h2{
+
+    font-size:72px;
+
+    font-weight:normal;
+
+    line-height:1.05;
+}
+
+
+
+/* galería editorial */
+
+.editorial-galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+}
+
+
+
+/* cards */
+
+.editorial-card{
+
+    background:#efefef;
+
+    padding:14px;
+}
+
+
+
+/* top */
+
+.editorial-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:14px;
+}
+
+
+
+/* títulos internos */
+
+.editorial-top h2{
+
+    font-size:68px;
+
+    font-weight:bold;
+
+    line-height:0.9;
+
+    margin-bottom:10px;
+}
+
+
+
+/* texto */
+
+.editorial-top p{
+
+    font-size:16px;
+
+    font-weight:bold;
+}
+
+
+
+/* miniaturas */
+
+.editorial-top img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+}
+
+
+
+/* imagen principal */
+
+.editorial-main img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+
 /* sección proyecto */
 
 .proyecto{
@@ -531,101 +688,6 @@ nav a:hover{
 
 
 
-/* galería editorial */
-
-.editorial-galeria{
-
-    display:grid;
-
-    grid-template-columns:repeat(2, 1fr);
-
-    gap:30px;
-
-    padding:0 70px 140px 70px;
-}
-
-
-
-/* cards */
-
-.editorial-card{
-
-    background:#efefef;
-
-    padding:14px;
-}
-
-
-
-/* top */
-
-.editorial-top{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:flex-start;
-
-    margin-bottom:14px;
-}
-
-
-
-/* títulos */
-
-.editorial-top h2{
-
-    font-size:68px;
-
-    font-weight:bold;
-
-    line-height:0.9;
-
-    margin-bottom:10px;
-}
-
-
-
-/* texto */
-
-.editorial-top p{
-
-    font-size:16px;
-
-    font-weight:bold;
-}
-
-
-
-/* miniaturas */
-
-.editorial-top img{
-
-    width:120px;
-
-    height:120px;
-
-    object-fit:cover;
-}
-
-
-
-/* imagen principal */
-
-.editorial-main img{
-
-    width:100%;
-
-    height:520px;
-
-    object-fit:cover;
-
-    display:block;
-}
-
-
-
 /* sección contacto */
 
 .contacto{
@@ -812,6 +874,8 @@ footer{
     .hero-titulo h1{
 
         font-size:48px;
+
+        line-height:1.1;
     }
 
 
@@ -821,24 +885,27 @@ footer{
     }
 
 
+    .editorial-section,
     .proyecto,
-    .proceso,
-    .editorial-galeria{
+    .proceso{
 
         padding:0 40px 100px 40px;
     }
 
 
+    .editorial-header h2,
     .proyecto-header h2,
     .proceso-header h2{
 
-        font-size:48px;
+        font-size:46px;
+
+        line-height:1.08;
     }
 
 
+    .editorial-galeria,
     .proyecto-grid,
-    .proceso-grid,
-    .editorial-galeria{
+    .proceso-grid{
 
         grid-template-columns:1fr;
 
@@ -857,6 +924,8 @@ footer{
     .editorial-top h2{
 
         font-size:42px;
+
+        line-height:0.95;
     }
 
 
@@ -881,6 +950,8 @@ footer{
     .contacto-overlay h2{
 
         font-size:52px;
+
+        line-height:1;
     }
 
 
@@ -889,6 +960,53 @@ footer{
         flex-direction:column;
 
         gap:12px;
+    }
+
+}
+
+
+
+/* móviles pequeños */
+
+@media(max-width:600px){
+
+    .hero-titulo h1{
+
+        font-size:38px;
+    }
+
+
+    .editorial-header h2,
+    .proyecto-header h2,
+    .proceso-header h2{
+
+        font-size:36px;
+    }
+
+
+    .editorial-top h2{
+
+        font-size:32px;
+    }
+
+
+    .contacto-overlay h2{
+
+        font-size:42px;
+    }
+
+
+    .hero-info{
+
+        padding:0 28px 70px 28px;
+    }
+
+
+    .editorial-section,
+    .proyecto,
+    .proceso{
+
+        padding:0 28px 90px 28px;
     }
 
 }
