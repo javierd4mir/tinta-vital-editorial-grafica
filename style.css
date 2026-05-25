@@ -459,9 +459,9 @@ nav a:hover{
 
 
 
-/* grid proceso */
+/* layout proceso */
 
-.proceso-grid{
+.proceso-layout{
 
     display:grid;
 
@@ -472,55 +472,59 @@ nav a:hover{
 
 
 
-/* tarjetas proceso */
+/* bloques */
 
-.proceso-card{
+.proceso-box{
 
-    cursor:pointer;
-}
+    border:1px solid #ececec;
 
+    padding:26px;
 
-
-/* imágenes proceso */
-
-.proceso-card img{
-
-    width:100%;
-
-    height:720px;
-
-    object-fit:cover;
-
-    display:block;
-
-    transition:0.4s ease;
+    transition:0.3s ease;
 }
 
 
 
 /* hover */
 
-.proceso-card:hover img{
+.proceso-box:hover{
 
-    opacity:0.88;
+    transform:translateY(-4px);
+}
 
-    transform:scale(1.01);
+
+
+/* contenedor imagen */
+
+.proceso-box-img{
+
+    border:1px solid #ececec;
+
+    padding:18px;
+
+    margin-bottom:24px;
+}
+
+
+
+/* imágenes */
+
+.proceso-box-img img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    display:block;
 }
 
 
 
 /* info proceso */
 
-.proceso-info{
-
-    padding-top:22px;
-}
-
-
-
-/* títulos proceso */
-
-.proceso-info h3{
+.proceso-box-info h3{
 
     font-size:28px;
 
@@ -552,9 +556,9 @@ nav a:hover{
 
 .contacto img{
 
-    width:120%;
+    width:100%;
 
-    height:120%;
+    height:100%;
 
     object-fit:cover;
 
@@ -562,9 +566,9 @@ nav a:hover{
 
     display:block;
 
-    filter:brightness(0.78);
+    transform:rotate(90deg);
 
-    transform:rotate(-90deg) scale(1.25);
+    margin-left:0;
 }
 
 
@@ -741,7 +745,7 @@ footer{
 
 
     .proyecto-grid,
-    .proceso-grid{
+    .proceso-layout{
 
         grid-template-columns:1fr;
 
@@ -749,8 +753,7 @@ footer{
     }
 
 
-    .proyecto-card img,
-    .proceso-card img{
+    .proyecto-card img{
 
         height:auto;
     }
