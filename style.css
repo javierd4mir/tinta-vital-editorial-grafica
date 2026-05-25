@@ -413,6 +413,124 @@ nav a:hover{
 
 
 
+/* sección proceso */
+
+.proceso{
+
+    padding:0 70px 140px 70px;
+}
+
+
+
+/* encabezado proceso */
+
+.proceso-header{
+
+    margin-bottom:70px;
+}
+
+
+
+/* subtítulo proceso */
+
+.proceso-subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    color:#666;
+
+    margin-bottom:24px;
+}
+
+
+
+/* título proceso */
+
+.proceso-header h2{
+
+    font-size:72px;
+
+    font-weight:normal;
+
+    line-height:1.05;
+}
+
+
+
+/* grid proceso */
+
+.proceso-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:40px;
+}
+
+
+
+/* tarjetas proceso */
+
+.proceso-card{
+
+    cursor:pointer;
+}
+
+
+
+/* imágenes proceso */
+
+.proceso-card img{
+
+    width:100%;
+
+    height:720px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.4s ease;
+}
+
+
+
+/* hover */
+
+.proceso-card:hover img{
+
+    opacity:0.88;
+
+    transform:scale(1.01);
+}
+
+
+
+/* info proceso */
+
+.proceso-info{
+
+    padding-top:22px;
+}
+
+
+
+/* títulos proceso */
+
+.proceso-info h3{
+
+    font-size:28px;
+
+    font-weight:normal;
+
+    line-height:1.3;
+}
+
+
+
 /* sección contacto */
 
 .contacto{
@@ -434,9 +552,9 @@ nav a:hover{
 
 .contacto img{
 
-    width:115%;
+    width:120%;
 
-    height:115%;
+    height:120%;
 
     object-fit:cover;
 
@@ -446,7 +564,7 @@ nav a:hover{
 
     filter:brightness(0.78);
 
-    transform:rotate(-8deg) scale(1.1);
+    transform:rotate(-90deg) scale(1.25);
 }
 
 
@@ -608,19 +726,22 @@ footer{
     }
 
 
-    .proyecto{
+    .proyecto,
+    .proceso{
 
         padding:0 40px 100px 40px;
     }
 
 
-    .proyecto-header h2{
+    .proyecto-header h2,
+    .proceso-header h2{
 
         font-size:48px;
     }
 
 
-    .proyecto-grid{
+    .proyecto-grid,
+    .proceso-grid{
 
         grid-template-columns:1fr;
 
@@ -628,7 +749,8 @@ footer{
     }
 
 
-    .proyecto-card img{
+    .proyecto-card img,
+    .proceso-card img{
 
         height:auto;
     }
