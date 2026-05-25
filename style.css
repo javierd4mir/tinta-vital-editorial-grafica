@@ -465,7 +465,7 @@ nav a:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
 
     gap:40px;
 }
@@ -531,6 +531,101 @@ nav a:hover{
 
 
 
+/* galería editorial */
+
+.editorial-galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+
+    padding:0 70px 140px 70px;
+}
+
+
+
+/* cards */
+
+.editorial-card{
+
+    background:#efefef;
+
+    padding:14px;
+}
+
+
+
+/* top */
+
+.editorial-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:14px;
+}
+
+
+
+/* títulos */
+
+.editorial-top h2{
+
+    font-size:68px;
+
+    font-weight:bold;
+
+    line-height:0.9;
+
+    margin-bottom:10px;
+}
+
+
+
+/* texto */
+
+.editorial-top p{
+
+    font-size:16px;
+
+    font-weight:bold;
+}
+
+
+
+/* miniaturas */
+
+.editorial-top img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+}
+
+
+
+/* imagen principal */
+
+.editorial-main img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+
 /* sección contacto */
 
 .contacto{
@@ -539,7 +634,7 @@ nav a:hover{
 
     width:100%;
 
-    height:55vh;
+    height:85vh;
 
     overflow:hidden;
 
@@ -558,7 +653,7 @@ nav a:hover{
 
     object-fit:cover;
 
-    object-position:center 68%;
+    object-position:center 78%;
 
     display:block;
 
@@ -727,7 +822,8 @@ footer{
 
 
     .proyecto,
-    .proceso{
+    .proceso,
+    .editorial-galeria{
 
         padding:0 40px 100px 40px;
     }
@@ -741,7 +837,8 @@ footer{
 
 
     .proyecto-grid,
-    .proceso-grid{
+    .proceso-grid,
+    .editorial-galeria{
 
         grid-template-columns:1fr;
 
@@ -750,9 +847,16 @@ footer{
 
 
     .proyecto-card img,
-    .proceso-card img{
+    .proceso-card img,
+    .editorial-main img{
 
         height:auto;
+    }
+
+
+    .editorial-top h2{
+
+        font-size:42px;
     }
 
 
