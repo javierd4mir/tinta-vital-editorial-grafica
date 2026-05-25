@@ -280,6 +280,139 @@ nav a:hover{
 
 
 
+/* sección proyecto */
+
+.proyecto{
+
+    padding:0 70px 140px 70px;
+}
+
+
+
+/* encabezado */
+
+.proyecto-header{
+
+    margin-bottom:70px;
+}
+
+
+
+/* subtítulo */
+
+.proyecto-subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    color:#666;
+
+    margin-bottom:24px;
+}
+
+
+
+/* título */
+
+.proyecto-header h2{
+
+    font-size:72px;
+
+    font-weight:normal;
+
+    line-height:1.05;
+}
+
+
+
+/* grid */
+
+.proyecto-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:40px;
+}
+
+
+
+/* tarjetas */
+
+.proyecto-card{
+
+    cursor:pointer;
+}
+
+
+
+/* imágenes */
+
+.proyecto-card img{
+
+    width:100%;
+
+    height:620px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.4s ease;
+}
+
+
+
+/* hover imagen */
+
+.proyecto-card:hover img{
+
+    opacity:0.88;
+
+    transform:scale(1.01);
+}
+
+
+
+/* info */
+
+.proyecto-info{
+
+    padding-top:22px;
+}
+
+
+
+/* categoría */
+
+.categoria{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    color:#666;
+
+    margin-bottom:14px;
+}
+
+
+
+/* títulos */
+
+.proyecto-info h3{
+
+    font-size:28px;
+
+    font-weight:normal;
+
+    line-height:1.3;
+}
+
+
+
 /* sección contacto */
 
 .contacto{
@@ -301,9 +434,9 @@ nav a:hover{
 
 .contacto img{
 
-    width:100%;
+    width:115%;
 
-    height:100%;
+    height:115%;
 
     object-fit:cover;
 
@@ -312,6 +445,8 @@ nav a:hover{
     display:block;
 
     filter:brightness(0.78);
+
+    transform:rotate(-8deg) scale(1.1);
 }
 
 
@@ -470,6 +605,32 @@ footer{
     .hero-miniatura{
 
         justify-content:flex-start;
+    }
+
+
+    .proyecto{
+
+        padding:0 40px 100px 40px;
+    }
+
+
+    .proyecto-header h2{
+
+        font-size:48px;
+    }
+
+
+    .proyecto-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+    }
+
+
+    .proyecto-card img{
+
+        height:auto;
     }
 
 
