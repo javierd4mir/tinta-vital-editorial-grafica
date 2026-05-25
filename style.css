@@ -83,12 +83,12 @@ nav a{
 
     font-size:14px;
 
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 
 
-/* hover navegación */
+/* efecto hover */
 
 nav a:hover{
 
@@ -129,8 +129,6 @@ nav a:hover{
 
     padding:32px 0 55px 0;
 
-    text-align:left;
-
     margin-left:80px;
 }
 
@@ -162,7 +160,7 @@ nav a:hover{
 
 
 
-/* layout principal */
+/* layout editorial */
 
 .hero-info{
 
@@ -194,7 +192,22 @@ nav a:hover{
 
 
 
-/* título */
+/* subtítulo editorial */
+
+.subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    margin-bottom:22px;
+
+    color:#555;
+}
+
+
+
+/* título principal */
 
 .hero-titulo h1{
 
@@ -207,7 +220,7 @@ nav a:hover{
 
 
 
-/* descripción */
+/* columna descripción */
 
 .hero-descripcion{
 
@@ -237,7 +250,7 @@ nav a:hover{
 
 
 
-/* miniatura derecha */
+/* columna imagen */
 
 .hero-miniatura{
 
@@ -259,6 +272,8 @@ nav a:hover{
     width:33%;
 
     min-width:220px;
+
+    margin-left:auto;
 
     display:block;
 }
