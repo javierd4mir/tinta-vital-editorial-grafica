@@ -123,7 +123,7 @@ nav a:hover{
 
 
 
-/* nombre debajo imagen */
+/* nombre */
 
 .nombre-proyecto{
 
@@ -149,7 +149,7 @@ nav a:hover{
 
 
 
-/* efecto elegante */
+/* efecto hover */
 
 .nombre-proyecto h2:hover{
 
@@ -207,7 +207,7 @@ nav a:hover{
 
 
 
-/* título principal */
+/* título */
 
 .hero-titulo h1{
 
@@ -220,7 +220,7 @@ nav a:hover{
 
 
 
-/* columna descripción */
+/* descripción */
 
 .hero-descripcion{
 
@@ -250,7 +250,7 @@ nav a:hover{
 
 
 
-/* columna imagen */
+/* imagen derecha */
 
 .hero-miniatura{
 
@@ -265,7 +265,7 @@ nav a:hover{
 
 
 
-/* imagen pequeña */
+/* miniatura */
 
 .hero-miniatura img{
 
@@ -284,37 +284,53 @@ nav a:hover{
 
 .contacto{
 
-    display:grid;
+    position:relative;
 
-    grid-template-columns:1fr 1fr;
+    width:100%;
 
-    gap:90px;
+    height:82vh;
 
-    padding:0 70px 140px 70px;
+    overflow:hidden;
 
-    align-items:center;
+    margin-bottom:140px;
 }
 
 
 
 /* imagen contacto */
 
-.contacto-imagen img{
+.contacto img{
 
     width:100%;
 
-    max-width:700px;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center center;
 
     display:block;
+
+    filter:brightness(0.78);
 }
 
 
 
-/* información contacto */
+/* contenido sobre imagen */
 
-.contacto-info{
+.contacto-overlay{
+
+    position:absolute;
+
+    top:50%;
+
+    left:70px;
+
+    transform:translateY(-50%);
 
     max-width:520px;
+
+    color:white;
 }
 
 
@@ -327,16 +343,16 @@ nav a:hover{
 
     letter-spacing:3px;
 
-    color:#666;
-
     margin-bottom:24px;
+
+    opacity:0.8;
 }
 
 
 
 /* título contacto */
 
-.contacto-info h2{
+.contacto-overlay h2{
 
     font-size:78px;
 
@@ -349,7 +365,7 @@ nav a:hover{
 
 
 
-/* descripción contacto */
+/* texto contacto */
 
 .contacto-texto{
 
@@ -362,7 +378,7 @@ nav a:hover{
 
 
 
-/* links contacto */
+/* links */
 
 .contacto-links{
 
@@ -375,7 +391,7 @@ nav a:hover{
 
 
 
-/* textos contacto */
+/* textos links */
 
 .contacto-links p{
 
@@ -386,11 +402,11 @@ nav a:hover{
 
 
 
-/* hover contacto */
+/* hover links */
 
 .contacto-links p:hover{
 
-    opacity:0.55;
+    opacity:0.7;
 
     transform:translateX(4px);
 }
@@ -459,15 +475,23 @@ footer{
 
     .contacto{
 
-        grid-template-columns:1fr;
+        height:70vh;
 
-        gap:50px;
-
-        padding:0 40px 100px 40px;
+        margin-bottom:90px;
     }
 
 
-    .contacto-info h2{
+    .contacto-overlay{
+
+        left:40px;
+
+        right:40px;
+
+        max-width:none;
+    }
+
+
+    .contacto-overlay h2{
 
         font-size:52px;
     }
