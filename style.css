@@ -88,7 +88,7 @@ nav a{
 
 
 
-/* efecto hover */
+/* hover navegación */
 
 nav a:hover{
 
@@ -97,7 +97,7 @@ nav a:hover{
 
 
 
-/* imagen principal */
+/* portada */
 
 .hero-imagen{
 
@@ -106,7 +106,7 @@ nav a:hover{
 
 
 
-/* imagen portada */
+/* imagen principal */
 
 .hero-imagen img{
 
@@ -170,7 +170,7 @@ nav a:hover{
 
     gap:70px;
 
-    padding:0 70px 120px 70px;
+    padding:0 70px 140px 70px;
 
     align-items:center;
 }
@@ -192,7 +192,7 @@ nav a:hover{
 
 
 
-/* subtítulo editorial */
+/* subtítulo */
 
 .subtitulo{
 
@@ -280,6 +280,123 @@ nav a:hover{
 
 
 
+/* sección contacto */
+
+.contacto{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    padding:0 70px 140px 70px;
+
+    align-items:center;
+}
+
+
+
+/* imagen contacto */
+
+.contacto-imagen img{
+
+    width:100%;
+
+    max-width:700px;
+
+    display:block;
+}
+
+
+
+/* información contacto */
+
+.contacto-info{
+
+    max-width:520px;
+}
+
+
+
+/* subtítulo contacto */
+
+.contacto-subtitulo{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    color:#666;
+
+    margin-bottom:24px;
+}
+
+
+
+/* título contacto */
+
+.contacto-info h2{
+
+    font-size:78px;
+
+    font-weight:normal;
+
+    line-height:1;
+
+    margin-bottom:35px;
+}
+
+
+
+/* descripción contacto */
+
+.contacto-texto{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+}
+
+
+
+/* links contacto */
+
+.contacto-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+
+
+/* textos contacto */
+
+.contacto-links p{
+
+    font-size:16px;
+
+    transition:0.3s ease;
+}
+
+
+
+/* hover contacto */
+
+.contacto-links p:hover{
+
+    opacity:0.55;
+
+    transform:translateX(4px);
+}
+
+
+
 /* footer */
 
 footer{
@@ -337,6 +454,22 @@ footer{
     .hero-miniatura{
 
         justify-content:flex-start;
+    }
+
+
+    .contacto{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+        padding:0 40px 100px 40px;
+    }
+
+
+    .contacto-info h2{
+
+        font-size:52px;
     }
 
 
