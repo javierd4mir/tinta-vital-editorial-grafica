@@ -1,4 +1,4 @@
-/* reinicio básico */
+/* inicio básico */
 
 *{
     margin:0;
@@ -511,7 +511,7 @@ nav a:hover{
 
     width:100%;
 
-    height:620px;
+    height:480px;
 
     object-fit:cover;
 
@@ -644,7 +644,7 @@ nav a:hover{
 
     width:100%;
 
-    height:720px;
+    height:520px;
 
     object-fit:cover;
 
@@ -827,15 +827,25 @@ nav a:hover{
 
 footer{
 
-    padding:50px 40px;
+    padding:60px 40px;
 
     display:flex;
 
     justify-content:space-between;
 
+    align-items:flex-start;
+
     border-top:1px solid #ececec;
 
-    font-size:14px;
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#666;
+
+    line-height:1.8;
 }
 
 
